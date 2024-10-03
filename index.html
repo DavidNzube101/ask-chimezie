@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background: url(https://images.pexels.com/photos/17604664/pexels-photo-17604664/free-photo-of-close-up-of-blooming-rose.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); background-repeat: no-repeat; background-size: cover; object-fit: cover;">
+  <div class="container">
+      <h1>Heya Mami💕!</h1>
+      <div id="question-container">
+          <div class="question show" id="q1">
+              <p>Do you like surprises?🎉</p>
+              <button onclick="nextQuestion(1)">Yes</button>
+              <button onclick="nextQuestion(1)">No</button>
+          </div>
+          <div class="question hidden" id="q2">
+              <p>How about dancing?💃🏻</p>
+              <button onclick="nextQuestion(2)">Love it!</button>
+              <button onclick="nextQuestion(2)">It's okay</button>
+          </div>
+          <div class="question hidden" id="q3">
+              <p>Are you free this Saturday night?📆</p>
+              <button onclick="nextQuestion(3)">Yes</button>
+              <button onclick="nextQuestion(3)">No</button>
+          </div>
+          <div class="question hidden" id="q4">
+              <p>Would you like to go on a date to 'Rave Night' with me?🪩🪩</p>
+              <button onclick="finalAnswer('Yes')">Absolutely!</button>
+              <button onclick="finalAnswer('Maybe')">Tell me more</button>
+          </div>
+      </div>
+      <div id="final-message" class="hidden">
+          <p class="final-message"></p>
+          <p>💖💃🕺💖</p>
+          <div id="timer"></div>
+      </div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
